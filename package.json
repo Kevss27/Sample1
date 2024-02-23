@@ -1,0 +1,15 @@
+{
+  "name": "sample_files",
+  "version": "1.0.0",
+  "description": "This File just use for practices and not for developing new projects",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./public/style.css --watch 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
