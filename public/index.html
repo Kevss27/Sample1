@@ -3,10 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRUD Project</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Form Submission</title>
 </head>
-<body class="bg-lime-200">
-    <h1 class="text-center text-4xl font-bold text-blue-600">CRUD PROJECT</h1>
+<body class="bg-lime-200 flex justify-center items-center h-screen">
+    <h1 class="text-4xl font-bold px-10">Form Submission</h1>
+    <form method="POST" action="process.php">
+        <label class="bg-center" for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="age">Age:</label>
+        <select id="age" name="age" required>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <!-- Add more age options as needed -->
+        </select><br><br>
+        <input class="bg-purple-500 rounded p-4 center content-center" type="submit" value="Submit">
+    </form>
 </body>
 </html>
